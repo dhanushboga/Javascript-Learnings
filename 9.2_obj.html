@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const product = {
+        Name : "shirt",
+        colour : "red",
+        price: 800,
+        rating: {
+            stars: 4.7
+        },
+        fun(){
+            console.log("json practice");
+        },
+    }
+
+    console.log(product);
+    console.log(product.fun());
+    console.log(JSON.stringify(product));   //convert javascript to JSON Object
+
+    const jsonstring = JSON.stringify(product);
+    console.log(JSON.parse(jsonstring)); //convert the  JSON to javascript object
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

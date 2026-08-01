@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Objects in detail</title>
+</head>
+<body>
+    <script>
+      const product = {
+          name : "shirt",
+          price: 500,
+      }
+
+console.log(product);
+console.log(product.name);
+console.log(product.price);
+
+console.log(product['price']);
+
+product['price'] = 800;
+console.log(product['price']);
+
+product['delivery-time'] = '5 hrs';
+
+
+console.log(product['delivery-time']);
+
+ const product1 = {
+          name : 'shirt',
+          price: 500,
+          rating:{                             //nested object
+            stars: 4.5,
+          },
+          fun: function function1(){
+            console.log('function inside object');
+          },
+      }
+console.log(product1.rating.stars);
+console.log(product1.fun());
+
+    </script>
+</body>
+</html>
