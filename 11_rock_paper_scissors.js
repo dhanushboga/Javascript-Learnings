@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Rock Papers Scissors</title>
-</head>
-
-<body>
-    <p>Rock Papers Scissors</p>
-
-    <button onclick="playgame('rock');">Rock</button>
-    <button onclick="playgame('papers');">Papers</button>
-    <button onclick="playgame('scissors');">Scissors</button>
-    
-
-    <p class="js-result"></p>
-    <p class="js-moves"></p>
-    <p class = "js-score"></p>
-    <button onclick="
-      score.wins = 0;
-      score.losses = 0;
-      score.Tie = 0;
-      localStorage.removeItem('score');
-      updateScore();
-    ">Reset Score</button>
-</body>
-<script>
-
-    let score = JSON.parse(localStorage.getItem("score"));
+let score = JSON.parse(localStorage.getItem("score"));
 
     if(!score){
         score = {
@@ -109,7 +81,7 @@
 
     localStorage.setItem("score",JSON.stringify(score))
     document.querySelector('.js-result').innerHTML = result;
-    document.querySelector('.js-moves').innerHTML = `you ${playermove} - ${computerguess} computer`
+    document.querySelector('.js-moves').innerHTML = `you <img class="move-img"src="images/${playermove}-emoji.png"><img> <img class="move-img" src="images/${computerguess}-emoji.png"></img> Computer`;
     updateScore();
 }
 
@@ -134,6 +106,3 @@ function updateScore(){
     }
      return computerguess;
    }
-
-</script>
-</html>
