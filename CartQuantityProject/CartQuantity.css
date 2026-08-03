@@ -1,0 +1,49 @@
+ .btn {
+        color: red;
+         background-color: blue;
+         text-align: center;
+         padding: 20px 50px;
+         border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .btn1 {
+        color: blue;
+        background-color: yellow;
+         text-align: center;
+         padding: 20px 50px;
+         border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .btn2 {
+        color: green;
+        background-color: red;
+         text-align: center;
+         padding: 20px 50px;
+         border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .btn3 {
+        color: red;
+        background-color: black;
+         text-align: center;
+         padding: 20px 50px;
+         border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+     .btn4 {
+        color: orange;
+         background-color: green;
+         text-align: center;
+         padding: 20px 50px;
+         border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
