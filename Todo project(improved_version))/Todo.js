@@ -45,7 +45,7 @@
      const dateValue = dateElement.value;
      
      console.log(inputValue);
-     todoarray.push({name:inputValue,dueDate});
+     todoarray.push({name:inputValue,dueDate:inputValue});
 
      console.log(todoarray);
      displayTodos();
