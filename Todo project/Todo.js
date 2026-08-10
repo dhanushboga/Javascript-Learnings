@@ -1,8 +1,5 @@
  const todoarray = [];
 
- 
-    
- 
  function displayTodos(){
 
   let todoElements = "";
