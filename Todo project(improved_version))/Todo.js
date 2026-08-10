@@ -1,35 +1,22 @@
- const todoarray = [
-  {
-    name:"html",
-    dueDate:"2022-12-22",
-  },
-
-  {
-    name: "css",
-    dueDate: "2022-12-22",
-  }
-
-  ];
+ const todoarray = ["html","css"];
+  displayTodos();
 
  function displayTodos(){
+ let todoElements = "";
 
-  let todoElements = "";
+    for(let i=0;i<todoarray.length;i++)
+      {
+          const item = todoarray[i];
+          const html = `<p>
+                       ${item}
+                       <button onclick="
+                       todoarray.splice(${i},1);
+                       displayTodos();
+                       ">Delete</button> 
+                       </p>`;
 
- for(let i=0;i<todoarray.length;i++){
-  const item = todoarray[i];
-  //const name = itemObject.name;
- // const dueDate =  itemObject.dueDate;
-  const {name,dueDate} = itemObject;
-  const html = `<p>
-               ${name} ${dueDate}
-               <button onclick="
-                 todoarray.splice(${i},1);
-                 displayTodos();
-               ">Delete</button> 
-               </p>`;
-
-  todoElements =  todoElements + html;
- }
+          todoElements =  todoElements + html;
+           }
  document.querySelector('.js-todos').innerHTML = todoElements;
 
  }
@@ -45,7 +32,7 @@
      const dateValue = dateElement.value;
      
      console.log(inputValue);
-     todoarray.push({name:inputValue,dueDate:inputValue});
+     todoarray.push({name:inputValue,dueDate: dateValue});
 
      console.log(todoarray);
      displayTodos();
