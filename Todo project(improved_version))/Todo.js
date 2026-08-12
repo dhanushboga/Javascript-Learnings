@@ -13,7 +13,7 @@
           const {name,dueDate} = itemObject;  //destructing
           const html = `<p>
                        ${name} ${dueDate}
-                       <button onclick="
+                       <button class = "delete-todo-button" onclick="
                        todoarray.splice(${i},1);
                        displayTodos();
                        ">Delete</button> 
