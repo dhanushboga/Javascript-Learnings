@@ -1,4 +1,4 @@
- const todoarray = ["html","css"];
+ const todoarray = [{name: "html",dueDate:"2022-12-22"},{name:"CSS",dueDate:"2023-12-12"}];
   displayTodos();
 
  function displayTodos(){
@@ -6,9 +6,13 @@
 
     for(let i=0;i<todoarray.length;i++)
       {
-          const item = todoarray[i];
+          const itemObject = todoarray[i];
+          //const name = itemObject.name;
+          //const dueDate = itemObject.dueDate;
+
+          const {name,dueDate} = itemObject;  //destructing
           const html = `<p>
-                       ${item}
+                       ${name} ${dueDate}
                        <button onclick="
                        todoarray.splice(${i},1);
                        displayTodos();
