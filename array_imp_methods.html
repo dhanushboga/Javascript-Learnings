@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Array Important menthods</title>
+</head>
+<body>
+    <script>
+
+    const array = [{
+        name : "dhanush",
+        age : 21
+    },
+    {
+        name: "kumar",
+        age:44
+    },
+    {
+        name : "chenchu",
+        age : 22
+    }
+]
+
+const result = array.filter(x => x.age < 30).map(x => x.name)
+console.log(result);
+
+    //const myarray = [1,2,3,4,6];
+
+    /*
+    for(let i = 0;i<=myarray.length;i++){
+        console.log(myarray[i]);
+    }*/
+
+   /*myarray.forEach(iterate);
+
+   function iterate(i,index){
+    console.log(index + ":" +i);
+   }*/
+
+
+
+   /* const multiple = [];
+   myarray.forEach(
+    
+   function(item){
+    multiple.push(item*10);
+   });
+
+   console.log(multiple);
+*/
+
+
+/* const multiple = myarray.map(function (item) {
+        return item * 10
+});
+
+console.log(multiple);
+*/
+    </script>
+</body>
+</html>
